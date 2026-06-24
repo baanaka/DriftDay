@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!--
+	  DriftDay requires NO special entitlements.
+
+	  Microphone, Speech Recognition, and Local Notifications are all granted
+	  via Info.plist usage strings and a runtime authorization prompt — none of
+	  them require an entitlement key here.
+
+	  Deliberately absent (per the build requirements): Push Notifications
+	  (aps-environment), iCloud / CloudKit containers, App Groups, and Keychain
+	  Sharing. This file stays empty so the project signs with a standard
+	  development or distribution profile and no extra capabilities.
+	-->
+</dict>
+</plist>

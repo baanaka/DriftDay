@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		220000000000000000000001 /* DriftDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000001 /* DriftDayApp.swift */; };
+		220000000000000000000002 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000002 /* AppState.swift */; };
+		220000000000000000000003 /* Domain/Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000003 /* Domain/Category.swift */; };
+		220000000000000000000004 /* Domain/SeededRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000004 /* Domain/SeededRandom.swift */; };
+		220000000000000000000005 /* Domain/TaskCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000005 /* Domain/TaskCatalog.swift */; };
+		220000000000000000000006 /* Domain/TaskGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000006 /* Domain/TaskGenerator.swift */; };
+		220000000000000000000007 /* Domain/DayStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000007 /* Domain/DayStyle.swift */; };
+		220000000000000000000008 /* Persistence/PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000008 /* Persistence/PersistenceController.swift */; };
+		220000000000000000000009 /* Persistence/ManagedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000009 /* Persistence/ManagedObjects.swift */; };
+		220000000000000000000010 /* Services/NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000010 /* Services/NotificationManager.swift */; };
+		220000000000000000000011 /* Services/AudioFileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000011 /* Services/AudioFileStore.swift */; };
+		220000000000000000000012 /* Services/AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000012 /* Services/AudioRecorder.swift */; };
+		220000000000000000000013 /* Services/AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000013 /* Services/AudioPlayer.swift */; };
+		220000000000000000000014 /* Services/TranscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000014 /* Services/TranscriptionService.swift */; };
+		220000000000000000000015 /* Services/DriftDayRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000015 /* Services/DriftDayRepository.swift */; };
+		220000000000000000000016 /* ViewModels/OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000016 /* ViewModels/OnboardingViewModel.swift */; };
+		220000000000000000000017 /* ViewModels/HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000017 /* ViewModels/HomeViewModel.swift */; };
+		220000000000000000000018 /* ViewModels/VoiceImpressionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000018 /* ViewModels/VoiceImpressionViewModel.swift */; };
+		220000000000000000000019 /* ViewModels/MemoryFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000019 /* ViewModels/MemoryFeedViewModel.swift */; };
+		220000000000000000000020 /* ViewModels/ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000020 /* ViewModels/ProfileViewModel.swift */; };
+		220000000000000000000021 /* Views/RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000021 /* Views/RootView.swift */; };
+		220000000000000000000022 /* Views/Shared/CategoryChipGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000022 /* Views/Shared/CategoryChipGrid.swift */; };
+		220000000000000000000023 /* Views/Shared/ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000023 /* Views/Shared/ShareSheet.swift */; };
+		220000000000000000000024 /* Views/Shared/PlaybackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000024 /* Views/Shared/PlaybackBar.swift */; };
+		220000000000000000000025 /* Views/Onboarding/OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000025 /* Views/Onboarding/OnboardingView.swift */; };
+		220000000000000000000026 /* Views/Home/SealedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000026 /* Views/Home/SealedCardView.swift */; };
+		220000000000000000000027 /* Views/Home/HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000027 /* Views/Home/HomeView.swift */; };
+		220000000000000000000028 /* Views/Voice/WaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000028 /* Views/Voice/WaveformView.swift */; };
+		220000000000000000000029 /* Views/Voice/VoiceImpressionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000029 /* Views/Voice/VoiceImpressionView.swift */; };
+		220000000000000000000030 /* Views/Memory/MemoryFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000030 /* Views/Memory/MemoryFeedView.swift */; };
+		220000000000000000000031 /* Views/Memory/MemoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000031 /* Views/Memory/MemoryDetailView.swift */; };
+		220000000000000000000032 /* Views/Profile/ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000032 /* Views/Profile/ProfileView.swift */; };
+		220000000000000000000033 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000033 /* Assets.xcassets */; };
+		220000000000000000000036 /* Persistence/DriftDay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F000000000011 /* Persistence/DriftDay.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		110000000000000000000001 /* DriftDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriftDayApp.swift; sourceTree = "<group>"; };
+		110000000000000000000002 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		110000000000000000000003 /* Domain/Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain/Category.swift; sourceTree = "<group>"; };
+		110000000000000000000004 /* Domain/SeededRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain/SeededRandom.swift; sourceTree = "<group>"; };
+		110000000000000000000005 /* Domain/TaskCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain/TaskCatalog.swift; sourceTree = "<group>"; };
+		110000000000000000000006 /* Domain/TaskGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain/TaskGenerator.swift; sourceTree = "<group>"; };
+		110000000000000000000007 /* Domain/DayStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain/DayStyle.swift; sourceTree = "<group>"; };
+		110000000000000000000008 /* Persistence/PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence/PersistenceController.swift; sourceTree = "<group>"; };
+		110000000000000000000009 /* Persistence/ManagedObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence/ManagedObjects.swift; sourceTree = "<group>"; };
+		110000000000000000000010 /* Services/NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/NotificationManager.swift; sourceTree = "<group>"; };
+		110000000000000000000011 /* Services/AudioFileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/AudioFileStore.swift; sourceTree = "<group>"; };
+		110000000000000000000012 /* Services/AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/AudioRecorder.swift; sourceTree = "<group>"; };
+		110000000000000000000013 /* Services/AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/AudioPlayer.swift; sourceTree = "<group>"; };
+		110000000000000000000014 /* Services/TranscriptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/TranscriptionService.swift; sourceTree = "<group>"; };
+		110000000000000000000015 /* Services/DriftDayRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/DriftDayRepository.swift; sourceTree = "<group>"; };
+		110000000000000000000016 /* ViewModels/OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/OnboardingViewModel.swift; sourceTree = "<group>"; };
+		110000000000000000000017 /* ViewModels/HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/HomeViewModel.swift; sourceTree = "<group>"; };
+		110000000000000000000018 /* ViewModels/VoiceImpressionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/VoiceImpressionViewModel.swift; sourceTree = "<group>"; };
+		110000000000000000000019 /* ViewModels/MemoryFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/MemoryFeedViewModel.swift; sourceTree = "<group>"; };
+		110000000000000000000020 /* ViewModels/ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/ProfileViewModel.swift; sourceTree = "<group>"; };
+		110000000000000000000021 /* Views/RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/RootView.swift; sourceTree = "<group>"; };
+		110000000000000000000022 /* Views/Shared/CategoryChipGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Shared/CategoryChipGrid.swift; sourceTree = "<group>"; };
+		110000000000000000000023 /* Views/Shared/ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Shared/ShareSheet.swift; sourceTree = "<group>"; };
+		110000000000000000000024 /* Views/Shared/PlaybackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Shared/PlaybackBar.swift; sourceTree = "<group>"; };
+		110000000000000000000025 /* Views/Onboarding/OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Onboarding/OnboardingView.swift; sourceTree = "<group>"; };
+		110000000000000000000026 /* Views/Home/SealedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Home/SealedCardView.swift; sourceTree = "<group>"; };
+		110000000000000000000027 /* Views/Home/HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Home/HomeView.swift; sourceTree = "<group>"; };
+		110000000000000000000028 /* Views/Voice/WaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Voice/WaveformView.swift; sourceTree = "<group>"; };
+		110000000000000000000029 /* Views/Voice/VoiceImpressionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Voice/VoiceImpressionView.swift; sourceTree = "<group>"; };
+		110000000000000000000030 /* Views/Memory/MemoryFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Memory/MemoryFeedView.swift; sourceTree = "<group>"; };
+		110000000000000000000031 /* Views/Memory/MemoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Memory/MemoryDetailView.swift; sourceTree = "<group>"; };
+		110000000000000000000032 /* Views/Profile/ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Profile/ProfileView.swift; sourceTree = "<group>"; };
+		110000000000000000000033 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		110000000000000000000034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		110000000000000000000035 /* DriftDay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DriftDay.entitlements; sourceTree = "<group>"; };
+		110000000000000000000036 /* DriftDay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DriftDay.xcdatamodel; sourceTree = "<group>"; };
+		1A2B3C4D5E6F000000000006 /* Drift Day App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drift Day App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A2B3C4D5E6F00000000000A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A2B3C4D5E6F000000000002 = {
+			isa = PBXGroup;
+			children = (
+				1A2B3C4D5E6F000000000003 /* DriftDay */,
+				1A2B3C4D5E6F000000000004 /* Products */,
+				1A2B3C4D5E6F000000000005 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1A2B3C4D5E6F000000000003 /* DriftDay */ = {
+			isa = PBXGroup;
+			children = (
+				110000000000000000000001 /* DriftDayApp.swift */,
+				110000000000000000000002 /* AppState.swift */,
+				110000000000000000000003 /* Domain/Category.swift */,
+				110000000000000000000004 /* Domain/SeededRandom.swift */,
+				110000000000000000000005 /* Domain/TaskCatalog.swift */,
+				110000000000000000000006 /* Domain/TaskGenerator.swift */,
+				110000000000000000000007 /* Domain/DayStyle.swift */,
+				110000000000000000000008 /* Persistence/PersistenceController.swift */,
+				110000000000000000000009 /* Persistence/ManagedObjects.swift */,
+				1A2B3C4D5E6F000000000011 /* Persistence/DriftDay.xcdatamodeld */,
+				110000000000000000000010 /* Services/NotificationManager.swift */,
+				110000000000000000000011 /* Services/AudioFileStore.swift */,
+				110000000000000000000012 /* Services/AudioRecorder.swift */,
+				110000000000000000000013 /* Services/AudioPlayer.swift */,
+				110000000000000000000014 /* Services/TranscriptionService.swift */,
+				110000000000000000000015 /* Services/DriftDayRepository.swift */,
+				110000000000000000000016 /* ViewModels/OnboardingViewModel.swift */,
+				110000000000000000000017 /* ViewModels/HomeViewModel.swift */,
+				110000000000000000000018 /* ViewModels/VoiceImpressionViewModel.swift */,
+				110000000000000000000019 /* ViewModels/MemoryFeedViewModel.swift */,
+				110000000000000000000020 /* ViewModels/ProfileViewModel.swift */,
+				110000000000000000000021 /* Views/RootView.swift */,
+				110000000000000000000022 /* Views/Shared/CategoryChipGrid.swift */,
+				110000000000000000000023 /* Views/Shared/ShareSheet.swift */,
+				110000000000000000000024 /* Views/Shared/PlaybackBar.swift */,
+				110000000000000000000025 /* Views/Onboarding/OnboardingView.swift */,
+				110000000000000000000026 /* Views/Home/SealedCardView.swift */,
+				110000000000000000000027 /* Views/Home/HomeView.swift */,
+				110000000000000000000028 /* Views/Voice/WaveformView.swift */,
+				110000000000000000000029 /* Views/Voice/VoiceImpressionView.swift */,
+				110000000000000000000030 /* Views/Memory/MemoryFeedView.swift */,
+				110000000000000000000031 /* Views/Memory/MemoryDetailView.swift */,
+				110000000000000000000032 /* Views/Profile/ProfileView.swift */,
+				110000000000000000000033 /* Assets.xcassets */,
+				110000000000000000000034 /* Info.plist */,
+				110000000000000000000035 /* DriftDay.entitlements */,
+			);
+			path = DriftDay;
+			sourceTree = "<group>";
+		};
+		1A2B3C4D5E6F000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B3C4D5E6F000000000006 /* Drift Day App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A2B3C4D5E6F000000000005 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A2B3C4D5E6F000000000007 /* DriftDay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A2B3C4D5E6F00000000000C /* Build configuration list for PBXNativeTarget "DriftDay" */;
+			buildPhases = (
+				1A2B3C4D5E6F000000000008 /* Sources */,
+				1A2B3C4D5E6F00000000000A /* Frameworks */,
+				1A2B3C4D5E6F000000000009 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DriftDay;
+			productName = DriftDay;
+			productReference = 1A2B3C4D5E6F000000000006 /* Drift Day App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A2B3C4D5E6F000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					1A2B3C4D5E6F000000000007 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 1A2B3C4D5E6F00000000000B /* Build configuration list for PBXProject "DriftDay" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A2B3C4D5E6F000000000002;
+			productRefGroup = 1A2B3C4D5E6F000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A2B3C4D5E6F000000000007 /* DriftDay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A2B3C4D5E6F000000000009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220000000000000000000033 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A2B3C4D5E6F000000000008 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220000000000000000000001 /* DriftDayApp.swift in Sources */,
+				220000000000000000000002 /* AppState.swift in Sources */,
+				220000000000000000000003 /* Domain/Category.swift in Sources */,
+				220000000000000000000004 /* Domain/SeededRandom.swift in Sources */,
+				220000000000000000000005 /* Domain/TaskCatalog.swift in Sources */,
+				220000000000000000000006 /* Domain/TaskGenerator.swift in Sources */,
+				220000000000000000000007 /* Domain/DayStyle.swift in Sources */,
+				220000000000000000000008 /* Persistence/PersistenceController.swift in Sources */,
+				220000000000000000000009 /* Persistence/ManagedObjects.swift in Sources */,
+				220000000000000000000036 /* Persistence/DriftDay.xcdatamodeld in Sources */,
+				220000000000000000000010 /* Services/NotificationManager.swift in Sources */,
+				220000000000000000000011 /* Services/AudioFileStore.swift in Sources */,
+				220000000000000000000012 /* Services/AudioRecorder.swift in Sources */,
+				220000000000000000000013 /* Services/AudioPlayer.swift in Sources */,
+				220000000000000000000014 /* Services/TranscriptionService.swift in Sources */,
+				220000000000000000000015 /* Services/DriftDayRepository.swift in Sources */,
+				220000000000000000000016 /* ViewModels/OnboardingViewModel.swift in Sources */,
+				220000000000000000000017 /* ViewModels/HomeViewModel.swift in Sources */,
+				220000000000000000000018 /* ViewModels/VoiceImpressionViewModel.swift in Sources */,
+				220000000000000000000019 /* ViewModels/MemoryFeedViewModel.swift in Sources */,
+				220000000000000000000020 /* ViewModels/ProfileViewModel.swift in Sources */,
+				220000000000000000000021 /* Views/RootView.swift in Sources */,
+				220000000000000000000022 /* Views/Shared/CategoryChipGrid.swift in Sources */,
+				220000000000000000000023 /* Views/Shared/ShareSheet.swift in Sources */,
+				220000000000000000000024 /* Views/Shared/PlaybackBar.swift in Sources */,
+				220000000000000000000025 /* Views/Onboarding/OnboardingView.swift in Sources */,
+				220000000000000000000026 /* Views/Home/SealedCardView.swift in Sources */,
+				220000000000000000000027 /* Views/Home/HomeView.swift in Sources */,
+				220000000000000000000028 /* Views/Voice/WaveformView.swift in Sources */,
+				220000000000000000000029 /* Views/Voice/VoiceImpressionView.swift in Sources */,
+				220000000000000000000030 /* Views/Memory/MemoryFeedView.swift in Sources */,
+				220000000000000000000031 /* Views/Memory/MemoryDetailView.swift in Sources */,
+				220000000000000000000032 /* Views/Profile/ProfileView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1A2B3C4D5E6F00000000000D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A2B3C4D5E6F00000000000E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A2B3C4D5E6F00000000000F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DriftDay/DriftDay.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DriftDay/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.driftday.app;
+				PRODUCT_NAME = "Drift Day App";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1A2B3C4D5E6F000000000010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DriftDay/DriftDay.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DriftDay/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.driftday.app;
+				PRODUCT_NAME = "Drift Day App";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A2B3C4D5E6F00000000000B /* Build configuration list for PBXProject "DriftDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A2B3C4D5E6F00000000000D /* Debug */,
+				1A2B3C4D5E6F00000000000E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A2B3C4D5E6F00000000000C /* Build configuration list for PBXNativeTarget "DriftDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A2B3C4D5E6F00000000000F /* Debug */,
+				1A2B3C4D5E6F000000000010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1A2B3C4D5E6F000000000011 /* Persistence/DriftDay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				110000000000000000000036 /* DriftDay.xcdatamodel */,
+			);
+			currentVersion = 110000000000000000000036 /* DriftDay.xcdatamodel */;
+			path = Persistence/DriftDay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1A2B3C4D5E6F000000000001 /* Project object */;
+}
